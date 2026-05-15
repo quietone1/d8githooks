@@ -69,4 +69,8 @@ done
 git checkout $first_branch
 echo "$push_message"
 
-echo "$thanks_message. Thanks!" | pbcopy
+if command -v pbcopy &>/dev/null; then
+  echo "$thanks_message. Thanks!" | pbcopy
+else
+  echo "$thanks_message. Thanks!"
+fi
