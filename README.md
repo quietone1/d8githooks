@@ -86,6 +86,7 @@ git pre-commit check failed: file core/core.services.yml should be 644 not 777
    ````
    git drmr <issue_type> <merge_request_id> [additional_branches]
    ````
+   The merge request ID can be either the numeric ID (e.g. `9395`) or the full GitLab URL (e.g. `https://git.drupalcode.org/project/drupal/-/merge_requests/9395`).
 
 ## Troubleshooting
 
